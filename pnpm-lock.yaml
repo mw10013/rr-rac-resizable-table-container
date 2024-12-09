@@ -14,6 +14,9 @@ importers:
       '@react-router/serve':
         specifier: ^7.0.2
         version: 7.0.2(react-router@7.0.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(typescript@5.7.2)
+      '@spectrum-icons/ui':
+        specifier: ^3.6.11
+        version: 3.6.11(@react-spectrum/provider@3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       isbot:
         specifier: ^5.1.17
         version: 5.1.17
@@ -68,6 +71,12 @@ importers:
         version: 5.1.4(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.9))
 
 packages:
+
+  '@adobe/react-spectrum-ui@1.2.1':
+    resolution: {integrity: sha512-wcrbEE2O/9WnEn6avBnaVRRx88S5PLFsPLr4wffzlbMfXeQsy+RMQwaJd3cbzrn18/j04Isit7f7Emfn0dhrJA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -723,6 +732,23 @@ packages:
     peerDependencies:
       react-router: 7.0.2
 
+  '@react-spectrum/icon@3.8.0':
+    resolution: {integrity: sha512-l4TlpCoGbnms/E9OwQqAx2P6TGI+dGqc2x5o4jcLO+BCpgWMbaWROvRIQNBY4JP5XG+QIb8GwOeCIiX6Fml18A==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
+  '@react-spectrum/provider@3.10.0':
+    resolution: {integrity: sha512-NF3Uz0jaJG9Abfm3IppEroM10o6Fs8L2PgZCwhllWjeMQeIAix6lrzey+I1zRYjMZ8E3+hFdPlsBkUr5yXm31Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+      react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
+  '@react-spectrum/utils@3.12.0':
+    resolution: {integrity: sha512-r3IAp9h766gATsYT6B66GmjgsTuhXSrEqKuPJenkPzshBeQPrD57ai0fyj5ihtiM3BINbkCQ+AXLrAmJunOV/A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
   '@react-stately/calendar@3.6.0':
     resolution: {integrity: sha512-GqUtOtGnwWjtNrJud8nY/ywI4VBP5byToNVRTnxbMl+gYO1Qe/uc5NG7zjwMxhb2kqSBHZFdkF0DXVqG2Ul+BA==}
     peerDependencies:
@@ -951,6 +977,11 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
+  '@react-types/provider@3.8.5':
+    resolution: {integrity: sha512-qK+FPNmuy5esgty8S2brOCtgB5s3IJquhhYHWV78eXJuYnJ+uDaNpJak26/OcR2ssd8iOEgNARSW0lTaut8rNQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
   '@react-types/radio@3.8.5':
     resolution: {integrity: sha512-gSImTPid6rsbJmwCkTliBIU/npYgJHOFaI3PNJo7Y0QTAnFelCtYeFtBiWrFodSArSv7ASqpLLUEj9hZu/rxIg==}
     peerDependencies:
@@ -1095,6 +1126,12 @@ packages:
     resolution: {integrity: sha512-ZvK2jBafvttJjoIdKm/Q/Bh7IJ1Ose9IBOwpOXcOvW3ikGTQGmKDgxTC6oCAzW6PynbkKP8+um1du81XJHZ0JA==}
     cpu: [x64]
     os: [win32]
+
+  '@spectrum-icons/ui@3.6.11':
+    resolution: {integrity: sha512-5qC5F3Lf947gPv/nkwbmxr6syTha++Oyn0KWAecFrg5BQ/Yapgh+EEp02GOcdE2NggNPCOW3PLpO4HrbCCPELw==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -2253,6 +2290,11 @@ packages:
 
 snapshots:
 
+  '@adobe/react-spectrum-ui@1.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@ampproject/remapping@2.3.0':
@@ -3284,6 +3326,38 @@ snapshots:
       - supports-color
       - typescript
 
+  '@react-spectrum/icon@3.8.0(@react-spectrum/provider@3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      '@react-aria/utils': 3.26.0(react@19.0.0)
+      '@react-spectrum/provider': 3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-spectrum/utils': 3.12.0(react@19.0.0)
+      '@react-types/shared': 3.26.0(react@19.0.0)
+      '@swc/helpers': 0.5.15
+      react: 19.0.0
+
+  '@react-spectrum/provider@3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      '@react-aria/i18n': 3.12.4(react@19.0.0)
+      '@react-aria/overlays': 3.24.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-aria/utils': 3.26.0(react@19.0.0)
+      '@react-spectrum/utils': 3.12.0(react@19.0.0)
+      '@react-types/provider': 3.8.5(react@19.0.0)
+      '@react-types/shared': 3.26.0(react@19.0.0)
+      '@swc/helpers': 0.5.15
+      clsx: 2.1.1
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+
+  '@react-spectrum/utils@3.12.0(react@19.0.0)':
+    dependencies:
+      '@react-aria/i18n': 3.12.4(react@19.0.0)
+      '@react-aria/ssr': 3.9.7(react@19.0.0)
+      '@react-aria/utils': 3.26.0(react@19.0.0)
+      '@react-types/shared': 3.26.0(react@19.0.0)
+      '@swc/helpers': 0.5.15
+      clsx: 2.1.1
+      react: 19.0.0
+
   '@react-stately/calendar@3.6.0(react@19.0.0)':
     dependencies:
       '@internationalized/date': 3.6.0
@@ -3622,6 +3696,11 @@ snapshots:
       '@react-types/shared': 3.26.0(react@19.0.0)
       react: 19.0.0
 
+  '@react-types/provider@3.8.5(react@19.0.0)':
+    dependencies:
+      '@react-types/shared': 3.26.0(react@19.0.0)
+      react: 19.0.0
+
   '@react-types/radio@3.8.5(react@19.0.0)':
     dependencies:
       '@react-types/shared': 3.26.0(react@19.0.0)
@@ -3730,6 +3809,16 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.28.1':
     optional: true
+
+  '@spectrum-icons/ui@3.6.11(@react-spectrum/provider@3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      '@adobe/react-spectrum-ui': 1.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@react-spectrum/icon': 3.8.0(@react-spectrum/provider@3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      '@react-spectrum/provider': 3.10.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@swc/helpers': 0.5.15
+      react: 19.0.0
+    transitivePeerDependencies:
+      - react-dom
 
   '@swc/helpers@0.5.15':
     dependencies:
