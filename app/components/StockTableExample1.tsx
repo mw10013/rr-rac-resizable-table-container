@@ -423,7 +423,7 @@ export const stocks = [
   },
 ];
 
-export function StockTableExample() {
+export function StockTableExample1() {
   let [sortDescriptor, setSortDescriptor] = useState<SortDescriptor>({
     column: "symbol",
     direction: "ascending",
@@ -442,13 +442,7 @@ export function StockTableExample() {
 
   return (
     <>
-      <h3>
-        StockTableExample (
-        <a href="https://react-spectrum.adobe.com/react-aria/examples/stock-table.html">
-          https://react-spectrum.adobe.com/react-aria/examples/stock-table.html
-        </a>
-        )
-      </h3>
+      <h3>StockTableExample1 (min-w-full on Table)</h3>
       <div className="bg-gradient-to-r from-indigo-500 to-violet-500 p-8 rounded-lg flex items-center justify-center md:col-span-2">
         <ResizableTableContainer className="max-h-[280px] w-full overflow-auto scroll-pt-[2.321rem] relative bg-white rounded-lg shadow text-gray-600">
           <Table
@@ -457,7 +451,7 @@ export function StockTableExample() {
             selectionBehavior="replace"
             sortDescriptor={sortDescriptor}
             onSortChange={setSortDescriptor}
-            className="border-separate border-spacing-0"
+            className="border-separate border-spacing-0 min-w-full"
           >
             <TableHeader>
               <StockColumn id="symbol" allowsSorting>
